@@ -143,7 +143,7 @@ STATICFILES_DIRS = [
 
 
 DEFAULT_FILE_STORAGE = 'storages.backends.dropbox.DropBoxStorage'
-DROPBOX_OAUTH2_TOKEN = 'ojx-mbnpy-cAAAAAAAAAAapyG0RVL1BtQG_ZPlGXtNATPUOrnnUyQZrVLAIrkwNT'
+DROPBOX_OAUTH2_TOKEN = 'yrjWUiDaL8gAAAAAAAAAATRW8omlN_Twoln0zUK_zjzX4WeqcDxMqqTZwB1wRrgO'
 
 # Django Heroku
 import django_heroku
