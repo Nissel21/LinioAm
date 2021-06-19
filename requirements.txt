@@ -49,3 +49,4 @@ urllib3==1.26.2
 virtualenv==20.2.1
 whitenoise==5.2.0
 wrapt==1.12.1
+thumbnail
