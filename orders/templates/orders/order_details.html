@@ -26,10 +26,9 @@
   >
     <div class="d-flex align-items-center">
       <img
-        class="img-fluid"
-        src="{{product.image.url}}"
-        alt="Card image cap"
-      />
+      class="card-img-top"
+      src="{{product.image.url}}"
+      alt="Card image cap">
       <h5 class="ml-3 mb-0 font-weight-light">
         <a href="{{o.product.get_absolute_url}}">{{o.product.name}}</a>
       </h5>
@@ -41,7 +40,7 @@
   {% endfor %}
   <li class="list-group-item bg-primary text-white">
     <h5 class="mb-0 text-right font-weight-light">
-      Total - <b>Rs.{{order.total_price}}</b>
+      Total - <b>S/. {{order.total_price}}</b>
     </h5>
   </li>
 </ul>

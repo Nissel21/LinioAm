@@ -8,14 +8,14 @@ Order {% endblock title %} {% block content %}
         {% for i in summary %}
         <p class="card-text d-flex justify-content-between mb-2">
           <span class="d-block"> {{i.quantity}} x {{i.product.name}} </span>
-          <span class="d-block">Rs.{{i.total}}</span>
+          <span class="d-block">S/. {{i.total}}</span>
         </p>
         {% empty %}
         <h5 class="card-text font-weight-light">No hay productos en el carrito </h5>
         {% endfor %}
         <h4 class="card-text text-right">
           <span class="badge badge-primary">
-            Total general = <b>Rs.{{cart.get_total_price}}</b>
+            Total general = <b> S/. {{cart.get_total_price}}</b>
           </span>
         </h4>
       </div>
