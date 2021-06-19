@@ -29,7 +29,7 @@ class Product(models.Model):
     price = models.FloatField(null=False)
     created = models.DateTimeField(auto_now_add=True)
     updated = models.DateTimeField(auto_now=True)
-    image = models.ImageField(upload_to="products", null=True, blank=True)
+    image = models.ImageField(upload_to='uploads/products/')
     availibility = models.BooleanField(null=False, default=True)
 
     class Meta:

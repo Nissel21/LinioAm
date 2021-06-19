@@ -21,10 +21,9 @@
       <div class="col-lg-4 col-12 mb-2 px-sm-1">
         <div class="card shadow-sm h-100">
           <img
-            src="{{ product.images.first.image.url|default:'https://via.placeholder.com/128' }}"
-            alt="No Image"
-            class="img-aspect p-2"
-          />
+            class="card-img-top"
+            src="{{product.image.url}}"
+            alt="Card image cap">
           <div class="card-body">
             <h3 class="card-subtitle font-weight-light">
               <a href="{% url 'store:product_details' product.slug %}"
