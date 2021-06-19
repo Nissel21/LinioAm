@@ -21,7 +21,7 @@
   <body>
     <nav class="navbar navbar-dark bg-dark navbar-expand-lg">
       <div class="container">
-        <a href="#" class="navbar-brand">E-Commerce</a>
+        <a href="#" class="navbar-brand">LINIO PERÚ</a>
         <button
           class="navbar-toggler"
           type="button"
@@ -34,12 +34,12 @@
           <ul class="navbar-nav">
             <li class="nav-item">
               <a href="{% url 'store:product_list' %}" class="nav-link">
-                <i class="fa fa-shopping-bag fa-lg mr-1"></i> Store
+                <i class="fa fa-shopping-bag fa-lg mr-1"></i> ¡Tu tienda virtual!
               </a>
             </li>
             <li class="nav-item">
               <a href="{% url 'store:categories_list' %}" class="nav-link">
-                <i class="fa fa-shopping-basket fa-lg mr-1"></i> Categories
+                <i class="fa fa-shopping-basket fa-lg mr-1"></i> Categorías
               </a>
             </li>
           </ul>
@@ -49,7 +49,7 @@
                 required
                 type="text"
                 name="name"
-                placeholder="Search items"
+                placeholder="Buscar productos..."
                 class="form-control"
               />
               <div class="input-group-append">
@@ -63,7 +63,7 @@
             {% if user.is_authenticated %}
             <li class="nav-item">
               <a href="{% url 'orders:my' %}" class="nav-link">
-                <i class="fa fa-truck fa-lg mr-1"></i> My Orders
+                <i class="fa fa-truck fa-lg mr-1"></i> Mis órdenes
               </a>
             </li>
             <li class="nav-item">
@@ -83,22 +83,22 @@
                 {{request.user}}
               </a>
               <div class="dropdown-menu">
-                <a href="{% url 'profile'%}" class="dropdown-item">Profile</a>
+                <a href="{% url 'profile'%}" class="dropdown-item">Mi perfil</a>
                 <a href="{% url 'password_change'%}" class="dropdown-item">
-                  Change Password
+                  Cambiar contraseña
                 </a>
-                <a href="{% url 'logout' %}" class="dropdown-item">Logout</a>
+                <a href="{% url 'logout' %}" class="dropdown-item">Cerrar Sesión</a>
               </div>
             </li>
             {% else %}
             <li class="nav-item">
               <a href="{% url 'login' %}" class="nav-link">
-                <i class="fa fa-sign-in fa-lg"></i> Login
+                <i class="fa fa-sign-in fa-lg"></i> Iniciar Sesión
               </a>
             </li>
             <li class="nav-item">
               <a href="{% url 'register' %}" class="nav-link">
-                <i class="fa fa-user-plus fa-lg"></i> Register
+                <i class="fa fa-user-plus fa-lg"></i> ¡Registrarse!
               </a>
             </li>
             {% endif %}

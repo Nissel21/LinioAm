@@ -1,15 +1,14 @@
 {% load thumbnail %}
-<h3 class="font-weight-light mb-0">Similar Products</h3>
+<h3 class="font-weight-light mb-0">Productos similares</h3>
 <hr />
 <div class="row my-2">
   {% for product in products %}
   <div class="col-lg-3 col-md-4 col-12">
     <div class="card shadow-sm h-100">
       <img
-        src="{% thumbnail product.image 0x150 %}"
-        alt="{{product.name}}"
-        class="card-img-top img-aspect p-2"
-      />
+      class="card-img-top"
+      src="{{product.image.url}}"
+      alt="Card image cap"/>
       <div class="card-body">
         <h4 class="card-subtitle font-weight-light mb-1">
           <a href="{{ product.get_absolute_url }}">{{product.name}}</a>
@@ -22,7 +21,7 @@
   </div>
   {% empty %}
   <div class="col-12">
-    <h5 class="font-weight-light">No similar products found.</h5>
+    <h5 class="font-weight-light">No se encontraron productos similares.</h5>
   </div>
   {% endfor %}
 </div>
