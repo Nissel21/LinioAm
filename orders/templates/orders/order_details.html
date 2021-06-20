@@ -14,7 +14,7 @@
   {% endif %}
 </h4>
 <h5 class="font-weight-light">
-  Dirección de envío: {{order.address}}, {{order.city}}, {{order.pin_code}}
+  Dirección de envío: {{order.direccion}}, {{order.provincia}}, {{order.distrito}}
 </h5>
 <h5 class="font-weight-light">Estado - {{order.status}}</h5>
 <h5 class="font-weight-light">Pedido el: {{order.created}}</h5>
@@ -27,7 +27,7 @@
     <div class="d-flex align-items-center">
       <img
         class="img-fluid"
-        src="{{product.image.url}}"
+        src="https://iili.io/ntpyVs.png"
         alt="Card image cap">
       <h5 class="ml-3 mb-0 font-weight-light">
         <a href="{{o.product.get_absolute_url}}">{{o.product.name}}</a>

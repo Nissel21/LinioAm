@@ -16,8 +16,8 @@
         {{order.user.last_name}}
       </h4>
       <h4 class="font-weight-light">{{order.address}}</h4>
-      <h4 class="font-weight-light mb-3">{{order.city}}, {{order.pin_code}}</h4>
-      <h5 class="font-weight-light mb-4">Placed on {{order.created}}</h5>
+      <h4 class="font-weight-light mb-3">{{order.provincia}}, {{order.distrito}}</h4>
+      <h5 class="font-weight-light mb-4">Pedido el {{order.created}}</h5>
       <hr />
       <table class="table table-striped mt-4">
         <thead class="table-dark">
@@ -55,7 +55,6 @@
         <span class="badge badge-danger">Pendiente de pago</span>
         {% endif %}
       </h5>
-      <h5>Modo de pago - pago efectivo</h5>
       <h5>Estado - {{order.status}}</h5>
     </div>
     <footer class="text-center d-print-none">
