@@ -12,7 +12,7 @@ from django.urls import reverse_lazy
 
 class Register(SuccessMessageMixin, generic.CreateView):
     form_class = UserCreationForm
-    success_message = "Registration Successfull you can now login."
+    success_message = "Registro exitoso, ahora puede iniciar sesión."
     template_name = "registration/register.html"
     success_url = reverse_lazy('login')
 
