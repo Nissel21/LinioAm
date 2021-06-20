@@ -16,10 +16,10 @@ choices = (
 class Order(models.Model):
     user = models.ForeignKey(settings.AUTH_USER_MODEL,
                              related_name='orders', on_delete=models.CASCADE)
-    address = models.CharField(max_length=150, blank=False, null=False)
-    distrito = models.CharField(max_length=10)
+    direccion = models.CharField(max_length=150, blank=False, null=False)
+    distrito = models.CharField(max_length=50)
     provincia = models.CharField(max_length=50)
-    paid = models.BooleanField(default=False)
+    paid = models.BooleanField(default=True)
     created = models.DateTimeField(auto_now_add=True)
     updated = models.DateTimeField(auto_now=True)
     status = models.CharField(
