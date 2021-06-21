@@ -6,10 +6,10 @@ from django.shortcuts import reverse
 # Create your models here.
 
 choices = (
-    ('Pending', 'Pending'),
-    ('Packed', 'Packed'),
-    ('Shipped', 'Shipped'),
-    ('Delivered', 'Delivered')
+    ('Pendiente', 'Pendiente'),
+    ('Empaquetado', 'Empaquetado'),
+    ('Enviado', 'Enviado'),
+    ('Entregado', 'Entregado')
 )
 
 
@@ -23,7 +23,7 @@ class Order(models.Model):
     created = models.DateTimeField(auto_now_add=True)
     updated = models.DateTimeField(auto_now=True)
     status = models.CharField(
-        choices=choices, max_length=10, default='Pending')
+        choices=choices, max_length=10, default='Pendiente')
     total_price = models.FloatField(null=False, blank=False)
 
     class Meta:
